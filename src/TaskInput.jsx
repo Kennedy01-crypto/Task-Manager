@@ -12,7 +12,7 @@ function TaskInput({ newTaskText, setNewTaskText, handleAddTask }) {
       }}
     >
       <h1 className="text-4xl sm:text-5xl font-bold text-primary mb-8">
-        To Do List
+        Task Manager
       </h1>
       <div className="flex flex-row justify-center">
         <input
