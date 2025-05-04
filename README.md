@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # To-Do List App
 
 A simple and customizable To-Do List application built with React and Tailwind CSS. This app allows users to add, edit, complete, and delete tasks. It also supports light and dark themes with a toggle button.
@@ -57,3 +58,7 @@ The app supports light and dark themes. Click the theme toggle button to switch 
 ## License
 
 This project is licensed under the MIT License.
+=======
+# JS_To_Do_List
+A JavaScript to do list 
+>>>>>>> 95056b1a9a8394523f46029e1cfb872f7fb98dc1
