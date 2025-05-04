@@ -54,10 +54,4 @@ The app supports light and dark themes. Click the theme toggle button to switch 
 - Tailwind CSS
 - Vite (for development server)
 
-## License
-
-# This project is licensed under the MIT License.
-
-# JS_To_Do_List
-
-A JavaScript to do list
+# Task Manager
