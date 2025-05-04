@@ -1,0 +1,30 @@
+@import "./theme.css";
+
+/* Define CSS variables for custom Tailwind theme colors */
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #ec4899;
+  --color-primary-light: #f9a8d4;
+  --color-primary-dark: #be185d;
+
+  --color-background-dark: #1a202c;
+  --color-background-medium: #2d3748;
+  --color-background-light: #4a5568;
+
+  --color-text-light: #f7fafc;
+  --color-text-medium: #a0aec0;
+  --color-text-dark: #2d3748;
+
+  --color-success: #68d391;
+  --color-success-light: #9ae6b4;
+  --color-success-dark: #2f855a;
+
+  --color-warning: #f6e05e;
+  --color-warning-light: #faf089;
+  --color-warning-dark: #d69e2e;
+
+  --color-danger: #f56565;
+  --color-danger-light: #feb2b2;
+  --color-danger-dark: #c53030;
+}
