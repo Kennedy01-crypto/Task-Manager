@@ -1,8 +1,123 @@
-@import "tailwindcss";
-
 #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+}
+#todo-input {
+  width: 100%;
+  max-width: 400px;
+  padding: 0.75rem 1rem;
+  margin: 1rem 0;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+#todo-list li {
+  list-style: none;
+  background-color: #000000;
+  margin: 0.5rem 0;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+#todo-list li:active {
+  background-color: #b2ebf2;
+  transform: scale(0.98);
+}
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+.task-edit-input {
+  width: 100%; /* Make the input take the full width of the task item */
+  padding: 8px; /* Add some padding for better usability */
+  font-size: 16px; /* Match the font size with the task text */
+  border: 2px solid #4caf50; /* Highlight the input with a green border */
+  border-radius: 4px; /* Add rounded corners */
+  background-color: #000000; /* Light background for better contrast */
+  color: #fff; /* Dark text color for readability */
+  outline: none; /* Remove the default outline */
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  transition: border-color 0.3s, box-shadow 0.3s; /* Smooth transition for focus effects */
+}
+
+.task-edit-input:focus {
+  border-color: #2196f3; /* Change border color to blue on focus */
+  box-shadow: 0 0 6px rgba(33, 150, 243, 0.5); /* Add a blue glow on focus */
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* New styles moved from inline styles in App.jsx */
+.task-item {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+.icon-check {
+  color: #4caf50;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+.icon-check:hover {
+  color: #388e3c;
+  size: 18px;
+}
+
+.task-text {
+  flex: 1;
+}
+
+.icon-edit {
+  cursor: pointer;
+  margin-left: 8px;
+  transition: color 0.3s;
+}
+
+.icon-edit:hover {
+  color: green;
+}
+
+.icon-delete {
+  cursor: pointer;
+  margin-left: 4px;
+  transition: color 0.3s;
+}
+
+.icon-delete:hover {
+  color: red;
 }
